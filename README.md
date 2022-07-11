@@ -1,4 +1,6 @@
-# Project Euler - Problem 30 - Digit Fifth Powers
+# Project Euler
+
+## Problem 30 - Digit Fifth Powers
 Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:
 
     1634 = 1^4 + 6^4 + 3^4 + 4^4
