@@ -13,9 +13,10 @@
 #     Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
 from num2words import num2words
+from typing import List, Tuple
 
 
-def calc_upper_limit(p):
+def calc_upper_limit(p: int) -> int:
     """
     Returns the upper limit (inclusive) of the set of numbers which
       could be written as the sum of the `p`th power of their digits.
@@ -24,7 +25,7 @@ def calc_upper_limit(p):
         p (int): Natural number
 
     Returns:
-        Highest possible number which might be written as sum of `p`th power of its digits.
+        (int): Highest possible number which might be written as sum of `p`th power of its digits
 
     Raises:
         AssertError: if incorrect args are given
@@ -50,7 +51,7 @@ def calc_upper_limit(p):
     return max_achievable_sum
 
 
-def main(p):
+def main(p: int) -> Tuple[List[int], int]:
     """
     Returns an ordered list of the numbers that
       can be written as the sum of the `p`th power of their digits,
@@ -61,8 +62,10 @@ def main(p):
         p (int): Natural number
 
     Returns:
-        List[int] of numbers equalling sum of `p`th power of their digits,
-          and the sum of these numbers
+        (Tuple[List[int], int]):
+            Tuple of ...
+              * List of numbers equalling sum of `p`th power of their digits
+              * Sum of those numbers
 
     Raises:
         AssertError: if any incorrect args are given
